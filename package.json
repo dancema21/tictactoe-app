@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
+    "start": "node backend/server.js",
     "dev": "parcel frontend/index.html",
     "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
     "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\"",
@@ -31,9 +33,16 @@
     "eslint-plugin-import": "^2.25.4",
     "jest": "^27.4.7",
     "parcel-bundler": "^1.12.5",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "nodemon": "^2.0.12"
   },
   "dependencies": {
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nanobuffer": "^2.0.0",
+    "serve-handler": "^6.1.3",
+    "socket.io": "^4.1.3"
   }
 }
