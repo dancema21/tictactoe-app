@@ -1,0 +1,39 @@
+{
+  "name": "tiktaktoe-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "parcel frontend/index.html",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\"",
+    "lint": "eslint --ignore-path ./.gitignore --fix \"./**/*.{js,ts}\"",
+    "lint:check": "eslint --ignore-path ./.gitignore --quiet \"./**/*.{js,ts}\""
+  },
+  "browserslist": [
+    "last 2 Firefox versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancema21/tictactoe-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dancema21/tictactoe-app/issues"
+  },
+  "homepage": "https://github.com/dancema21/tictactoe-app#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.4.7",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
